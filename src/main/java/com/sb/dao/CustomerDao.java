@@ -6,6 +6,7 @@ public class CustomerDao {
 	
 	System.out.println("ID : "+id);
 	System.out.println("End");
+	System.out.println("Start");
 	
 	}
 }
