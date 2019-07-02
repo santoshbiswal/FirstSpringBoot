@@ -22,5 +22,6 @@ public class EmployeeTest {
 	public void getAllEmployeeTest() {
 		assertNotNull(service.getAllEmployee());
 		System.err.println(service.getAllEmployee());
+		System.out.println("Byee...");
 	}
 }
