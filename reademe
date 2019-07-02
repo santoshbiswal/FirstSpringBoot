@@ -1,0 +1,41 @@
+
+how to install mysql in windows 10
+
+https://www.onlinetutorialspoint.com/mysql/install-mysql-on-windows-10-step-by-step.html
+
+i have set the port is 8085
+username : root
+password : admin
+ create database dev;
+
+
+mysql> use dev;
+
+
+CREATE USER 'springbootdb'@'localhost' IDENTIFIED BY 'springbootdb';
+GRANT ALL PRIVILEGES ON * . * TO 'springbootdb'@'localhost';
+
+
+ALTER USER 'student'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pass123';
+
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName"
+			value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:8085/dev?useSSL=false" />
+		<property name="username" value="springbootdb" />
+		<property name="password" value="springbootdb" />
+		</bean>
+		
+		============================
+		
+		create table employee(id INT(3), name VARCHAR(12),phone bigint(20));
+
+insert into employee values(3,'Khageswar',453345335);
+insert into employee values(2,'Ashok',234567);
+insert into employee values(1,'santosh',987654321);
+
+select * from employee;
+drop table employee;
+		
+		
