@@ -7,8 +7,7 @@ public class CustomerDao {
 	System.out.println("ID : "+id);
 	System.out.println("End");
 
-	System.out.println("start");
-
+	System.out.println("hi friends");//i am changing some line ,u can see 
 
 	}
 }
