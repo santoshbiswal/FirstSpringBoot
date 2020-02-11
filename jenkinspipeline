@@ -1,0 +1,16 @@
+node{
+    stage('build'){
+        echo 'build pipeline app'
+        git 'https://github.com/santoshbiswal/FirstSpringBoot.git'
+    }
+    stage('deploy'){
+        echo 'deploy pipeline app'
+        
+        echo 'echo \'helo\''
+    }
+    stage('test'){
+        echo 'test pipeline app'
+       
+    }
+     
+}
